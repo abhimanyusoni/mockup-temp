@@ -1,0 +1,125 @@
+
+*{
+    -webkit-transition: 0.3s all ease-in-out;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font: 400 16px "Poppins";
+    color: #374744;
+    background-color: #fffcf1;
+}
+#home_body_main .inner_wrapp{
+    padding: 20px 40px;
+    background-color: rgba(255, 255, 255, 0.66);
+}
+.posttype_ttl::after{
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 2px;
+    left: 50%;
+    bottom: -20px;
+    transform: translateX(-50%);
+    background: #b89f5d;
+}
+
+.form-outline .form-control {
+    height: 50px;
+}
+.form-outline .form-control~.form-label {
+    padding-top: 0.40rem;
+    color: #5a7670;
+}
+
+nav{
+    ul{
+        li{
+            a{
+                color: #5a7670 !important;
+            }
+        }
+    }
+}
+
+button{
+    background-color: #fa292a !important;
+    color: #FFF !important;
+}
+
+.form-notch *{
+    border-color: #5a7670 !important;
+}
+
+h2.posttype_ttl{
+    color: #fa292a !important;
+}
+
+.blogtype{
+    h3{
+        color: #273633 !important;
+    }
+    img{
+        box-shadow: 4px 4px 10px 0px rgba(83, 29, 4, 0.5);
+    }
+}
+
+.font_22{
+    font-size: 22px !important;
+}
+
+.search_result_main > .row {
+    .row{
+        &:nth-child(odd){
+            background-color: #fff5d3;
+        }
+        &.headings{
+            background-color: #262626 !important;
+            
+            h4{
+                color: #fff !important;
+            }
+            
+        }
+
+        .name{
+            color: rgb(26, 26, 26);
+            font: 700 20px "Poppins";
+        }
+        p{
+            margin-bottom: 0;
+        }
+    }
+}
+
+@media screen and (max-width: 767px){
+    section#home_body_main {
+        .inner_wrapp{
+            padding: 20px 20px;
+            h2{
+                font-size: 50px !important;
+            }
+            p{
+                font-size: 18px !important;
+            }
+        } 
+    }
+    .posttype_ttl{
+        font-size: 30px !important;
+    }
+    header{
+        ul{
+            text-align: right;
+        }
+    }
+}
+
+
+@media screen and (max-width: 480px){
+    section#home_body_main {
+        .inner_wrapp{
+            max-width: 300px;
+            width: 100%;
+        } 
+    }
+}
